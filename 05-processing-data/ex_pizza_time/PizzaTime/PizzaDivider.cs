@@ -11,8 +11,9 @@ namespace PizzaTime
 
         public int HowManySlicesPerPerson()
         {
-            // TODO Determine how many slices of pizza a person can have (same for everyone)
             int slicesPerPerson = 0;
+            slicesPerPerson = (slicesOfPizza / numberOfPeople);
+
 
             // Please dont change the code below (automatic unit tests)
             return slicesPerPerson;
@@ -22,7 +23,7 @@ namespace PizzaTime
         {
             // TODO Determine number of slices left if everyone gets his/her fair chance
             int numberOfSlicesLeft = 0;
-
+            numberOfSlicesLeft = (slicesOfPizza/slicesOfPizza);
             // Please dont change the code below (automatic unit tests)
             return numberOfSlicesLeft;
         }

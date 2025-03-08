@@ -16,7 +16,7 @@ namespace StudentID
             // TODO: Generate email for the student in the following format:
             // firstname.lastname@student.vives.be
             // Make sure that all letters are lowercase letters
-            string email = "";
+            string email = "" + firstname.ToLower() + "." + lastname.ToLower() + "@student.vives.be";
 
             // Please dont change the code below (automatic unit tests)
             return email;
@@ -27,7 +27,8 @@ namespace StudentID
             // TODO: Generate an ID for the student (random number of 6 digits)
             // Put it into the following format: rxxxxxx
             // r is a prefix and each x is a digit
-            string id = "";
+            Random generator = new Random();
+            string id = "r" + generator.Next(100000,999999);
 
             // Please dont change the code below (automatic unit tests)
             return id;

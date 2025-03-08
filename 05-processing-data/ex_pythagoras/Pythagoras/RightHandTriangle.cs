@@ -9,7 +9,7 @@ namespace Pythagoras
         public double DetermineA(double b, double c)
         {
             // TODO: Calculate the a-side from the b- and c-side
-            double a = 0;
+            double a = Math.Sqrt((c * c) - (b * b));
 
             // Please dont change the code below (automatic unit tests)
             return a;
@@ -17,7 +17,7 @@ namespace Pythagoras
         public double DetermineB(double a, double c)
         {
             // TODO: Calculate the b-side from the a- and c-side
-            double b = 0;
+            double b = Math.Sqrt((c * c) - (a * a));
 
             // Please dont change the code below (automatic unit tests)
             return b;
@@ -25,7 +25,8 @@ namespace Pythagoras
         public double DetermineC(double a, double b)
         {
             // TODO: Calculate the c-side from the a- and b-side
-            double c = 0;
+            
+            double c = Math.Sqrt((a * a)+(b * b));
 
             // Please dont change the code below (automatic unit tests)
             return c;

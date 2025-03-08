@@ -9,7 +9,8 @@ namespace DriftingYears
             Console.WriteLine("Welcome to the latest and greatest leap year checker.\n");
 
             // TODO: Request year from the user
-            int year = 0;
+            Console.WriteLine("Enter a year to check if its a leap year: ");
+            int year = Convert.ToInt32(Console.ReadLine());
 
             // Creating a leap year checker object
             LeapYearChecker leapChecker = new LeapYearChecker();
@@ -19,6 +20,14 @@ namespace DriftingYears
 
             // TODO: Output message to the user
             // Build if - else and use isUserYearLeapYear as condition
+            if (isUserYearLeapYear == true)
+            {
+                Console.WriteLine("This is a leapyear");
+
+            }
+            else {
+                Console.WriteLine("This is not a leap year");
+            }
 
             // Done
             Console.WriteLine("\nThank for using our app.");

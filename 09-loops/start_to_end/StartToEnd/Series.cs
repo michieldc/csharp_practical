@@ -10,6 +10,10 @@ namespace StartToEnd
         {
             // TODO Determine sum of values between start (included) and end (excluded)
             int sum = 0;
+            for(int i = start; i < end; i++)
+            {
+                sum += i;
+            }
 
             // Please dont change the code below (automatic unit tests)
             return sum;
@@ -20,6 +24,11 @@ namespace StartToEnd
             // TODO Determine sum of values between start (included) and end (excluded)
             // Increment from start to end with a value of step
             int sum = 0;
+            for(int i = start; i < end;)
+            {
+                sum += i;
+                i += step;
+            }
 
             // Please dont change the code below (automatic unit tests)
             return sum;

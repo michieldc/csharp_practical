@@ -10,6 +10,7 @@ namespace Converternator
         {
             // TODO Convert pounds to kilograms
             double kilograms = 0;
+            kilograms = (pounds / 2.20462);
 
             // Please dont change the code below (automatic unit tests)
             return kilograms;
@@ -19,6 +20,7 @@ namespace Converternator
         {
             // TODO Convert kilograms to pounds
             double pounds = 0;
+            pounds = (kilograms * 2.20462);
 
             // Please dont change the code below (automatic unit tests)
             return pounds;
@@ -28,6 +30,7 @@ namespace Converternator
         {
             // TODO Convert miles to kilometers
             double kilometers = 0;
+            kilometers = (miles * 1.60934);
 
             // Please dont change the code below (automatic unit tests)
             return kilometers;
@@ -37,6 +40,7 @@ namespace Converternator
         {
             // TODO Convert kilometers to miles
             double miles = 0;
+            miles = (kilometers / 1609 );
 
             // Please dont change the code below (automatic unit tests)
             return miles;

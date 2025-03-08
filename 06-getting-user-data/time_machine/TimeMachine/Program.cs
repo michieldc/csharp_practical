@@ -12,13 +12,15 @@ namespace TimeMachine
 
             Console.WriteLine("The current time is");
             clock.PrintToTerminal();
+            Console.WriteLine("Please enter the amount of minutes you want to jump forward: ");
+            int minutes = Convert.ToInt32(Console.ReadLine());
 
-            // TODO: Request number of minutes to add from the user
-            int minutes = 0;
+            Console.WriteLine("Please enter the amount of hours you want to jump forward: ");
+            int hours = Convert.ToInt32(Console.ReadLine());
 
-            // TODO: Request number of hours to add from the user
-            int hours = 0;
 
+            clock.AddHours(hours);
+            clock.AddMinutes(minutes);
             // TODO: Add the actual values to the current clock time
             // Call the AddMinutes() method
             // Call the AddHours() method

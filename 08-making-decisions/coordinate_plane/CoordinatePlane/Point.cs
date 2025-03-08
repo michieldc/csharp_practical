@@ -11,9 +11,30 @@ namespace CoordinatePlane
 
         public string Quadrant()
         {
+            
             // TODO Determine the quadrant of the coordinates
             // first, second, third, fourth or origin (if both 0)
             string quadrant = "";
+
+            if (x > 0 && y > 0)
+            {
+                quadrant = "first";
+            }
+            else if (x > 0 && y < 0)
+            {
+                quadrant = "fourth";
+            }
+            else if (x < 0 && y > 0)
+            {
+                quadrant = "second";
+            }
+            else if (x < 0 && y < 0)
+            {
+                quadrant = "third";
+            }
+            else {
+                quadrant = "origin";
+            }
 
             // Please dont change the code below (automatic unit tests)
             return quadrant;

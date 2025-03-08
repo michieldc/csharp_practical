@@ -13,7 +13,7 @@ namespace Evaluation
         public double Average()
         {
             // TODO: Determine average of exam score and lab score
-            double average = 0;
+            double average = ((examScore + labScore) / 2);
 
             // Please dont change the code below (automatic unit tests)
             return average;
@@ -22,7 +22,7 @@ namespace Evaluation
         public double Total()
         {
             // TODO: Determine total score if exam counts for 40% and lab for 60%
-            double total = 0;
+            double total = Math.Round(((examScore/100)*40) + ((labScore/100)*60),2);
 
             // Please dont change the code below (automatic unit tests)
             return total;

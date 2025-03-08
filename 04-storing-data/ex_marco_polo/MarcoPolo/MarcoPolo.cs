@@ -12,7 +12,7 @@ namespace MarcoPolo
             string lastname = "Polo";
 
             // TODO: Concatenate firstname and lastname and assign to fullname
-            string fullname = "";
+            string fullname = firstname + " " + lastname;
 
             Console.WriteLine("Hello, I am " + fullname);
 
@@ -23,7 +23,7 @@ namespace MarcoPolo
         public int Age()
         {
             // TODO: Initialize age to 19
-            int age = 0;
+            int age = 19;
 
             Console.WriteLine("I am " + age + " years of age.");
 
@@ -34,7 +34,7 @@ namespace MarcoPolo
         public string EyeColor()
         {
             // TODO: Set the color of my eyes to blue
-            string colorOfMyEyes = "grey";
+            string colorOfMyEyes = "blue";
 
             Console.WriteLine("I have fancy " + colorOfMyEyes + " colored eyes.");
 

@@ -12,7 +12,7 @@ namespace RectangleProperties
         public double CalculateArea()
         {
             // TODO: Calculate the area of a rectangle
-            double area = 0;
+            double area = width * height;
 
             // Please dont change the code below (automatic unit tests)
             return area;
@@ -21,7 +21,7 @@ namespace RectangleProperties
         public double CalculateCircumference()
         {
             // TODO: Calculate the circumference of a rectangle
-            double circumference = 0;
+            double circumference = 2* (width + height);
 
             // Please dont change the code below (automatic unit tests)
             return circumference;

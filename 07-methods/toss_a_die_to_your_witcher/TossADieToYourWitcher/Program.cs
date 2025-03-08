@@ -16,7 +16,7 @@ namespace TossADieToYourWitcher
 
             // dieValue will need to be assigned the result of
             // of the ThrowDie() method
-            int dieValue = 0;
+            int dieValue = ThrowDie();
 
             // TODO Call the ThrowDie method and store the result
             // that is returned by the method in the variable dieValue

@@ -14,7 +14,7 @@ namespace ProgrammingBugs
             string author = "Edsger Dijkstra";
 
             // TODO: Add quoted author to the message (on a new line), also prefix author with tab
-            string authoredMessage = "";
+            string authoredMessage = message +  " \n \t" + author;
 
             Console.WriteLine(authoredMessage);
 

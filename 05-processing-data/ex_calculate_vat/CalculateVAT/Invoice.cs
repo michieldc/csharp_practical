@@ -12,7 +12,7 @@ namespace CalculateVAT
         public double GetVAT()
         {
             // TODO: Calculate the vat percentage of the net value
-            double vat = 0;
+            double vat = Math.Round(((netPrice / 100) * vatPercentage), 2);
 
             // Please dont change the code below (automatic unit tests)
             return vat;

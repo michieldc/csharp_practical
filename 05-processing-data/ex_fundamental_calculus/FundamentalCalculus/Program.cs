@@ -20,6 +20,12 @@ namespace FundamentalCalculus
             Console.WriteLine($"4 * (-6) = {calculator.Multiply(4, -6)}");
 
             // TODO: Add further examples yourself
+
+            Console.WriteLine($"10 squared = {calculator.Square(10)}");
+
+            Console.WriteLine($"The absolute value of -20 = {calculator.AbsoluteValue(-20)}");
+
+            Console.WriteLine($"The inverse of -20 = {calculator.Inverse(-20)}");
         }
     }
 }

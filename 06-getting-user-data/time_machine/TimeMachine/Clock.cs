@@ -13,6 +13,9 @@ namespace TimeMachine
         {
             // TODO: Add delta to hours
             // Keep in mind that hours should stay in range of [0, 23]
+            hours = (hours + delta) % 24;
+
+
         }
 
         public void AddMinutes(int delta)
@@ -20,6 +23,11 @@ namespace TimeMachine
             // TODO: Add delta to minutes
             // Keep in mind that minutes should stay in range of [0, 59]
             // Don't forget to add to hours when it overflows
+            
+            hours = (hours +  (delta / 60)) % 60;
+            minutes = (minutes + delta) % 60;
+            
+
         }
 
         public void PrintToTerminal()

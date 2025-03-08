@@ -15,6 +15,7 @@ namespace HailCSharp
         {
             // TODO Call the HailCSharp method here so it outputs
             // its statements to the terminal.
+            HailCSharp();
 
         }
     }

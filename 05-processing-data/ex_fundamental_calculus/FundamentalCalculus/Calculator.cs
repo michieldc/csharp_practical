@@ -15,37 +15,37 @@ namespace FundamentalCalculus
         public int Subtract(int left, int right)
         {
             // TODO: Return the difference
-            return 0;
+            return left - right;
         }
 
         public int Multiply(int left, int right)
         {
             // TODO: Return the product
-            return 0;
+            return left * right;
         }
 
         public int Divide(int left, int right)
         {
             // TODO: Return the whole divident
-            return 0;
+            return left / right;
         }
 
         public int Modulo(int left, int right)
         {
             // TODO: Return the modulo
-            return 0;
+            return left % right;
         }
 
         public int AbsoluteValue(int value)
         {
             // TODO: Return the absolute value
-            return 0;
+            return Math.Abs(value);
         }
 
         public int Square(int value)
         {
             // TODO: Return the squared value
-            return 0;
+            return value * value;
         }
 
         public int Inverse(int value)
@@ -53,7 +53,7 @@ namespace FundamentalCalculus
             // TODO: Return the inverse value
             // -3 => 3
             // 3 => -3
-            return 0;
+            return -value;
         }
     }
 }
