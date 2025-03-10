@@ -15,6 +15,18 @@ namespace AppleCake
             // If value is dividable by 5, text should be "cake"
             // If value is dividable by 3 and 5, text should be "applecake"
             // In all other cases the string should be left empty
+            if (value % 3 == 0 && value % 5 == 0)
+            {
+                text = "applecake";
+            }else if (value % 3 == 0)
+            {
+                text = "apple";
+            }
+            else if (value % 5 == 0)
+            {
+                text = "cake";
+            }
+            
 
             return text;
         }
@@ -32,7 +44,17 @@ namespace AppleCake
 
             // Place the following in the body of your loop and replace the 3
             // with your iterator (i for example).
-            string text = AppleCake(3);
+
+            for(int i = start; i <= end; i++)
+            {   
+                string text = AppleCake(i);
+                if(text != "")
+                {
+                    output +=  $"\n{i}: {text}";
+                }
+            }
+
+            
 
             return output;
         }
