@@ -11,7 +11,10 @@ namespace TheSumOfAllNumbers
             int sum = 0;
 
             // TODO Determine the sum of the numbers using a for loop
-
+            foreach(int number in numbers)
+            {
+                   sum += number;
+            }
 
             // Please don't change the code below (automatic unit tests)
             return sum;
