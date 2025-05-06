@@ -18,6 +18,11 @@ namespace BinaryCoding
             // It cal also start with a character 'b' which
             // should also be ignored.
             // Ex.: b1001 0101
+            // 
+            binary.Trim();
+
+            decimalValue = Convert.ToInt32(binary.Trim(), 2);
+            Console.WriteLine(decimalValue);
 
             return decimalValue;
         }

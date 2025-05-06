@@ -10,9 +10,10 @@ namespace Reversal
         {
             string reversed = "";
 
-            // TODO Reverse the character order of the text and put the result in reversed.
-
-            // Please dont change the code below (automatic unit tests)
+            for(int i = text.Length-1; i >= 0; i--)
+            {
+                reversed += text[i];
+            }
             return reversed;
         }
     }

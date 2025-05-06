@@ -11,9 +11,28 @@ namespace Palindrome
             bool isPalindrome = false;
 
             // TODO Determine if word is a palindrome
+            string lowercase = word.ToLower().Trim();
+            string reverse = "";
+            for (int i = lowercase.Length-1; i >= 0; i--)
+            {
+                reverse += lowercase[i];
+            }
 
-            // Please dont change the code below (automatic unit tests)
-            return isPalindrome;
+            if (reverse == lowercase)
+            {
+                isPalindrome = true;
+                if (lowercase.Equals(""))
+                {
+                    isPalindrome = false;
+                }
+            }
+            else
+            {
+                isPalindrome = false;
+            }
+
+                // Please dont change the code below (automatic unit tests)
+                return isPalindrome;
         }
     }
 }

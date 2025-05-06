@@ -9,10 +9,10 @@ namespace WordsEverywhere
         public int CountWords(string text)
         {
             int numberOfWords = 0;
+            char[] delimiters = new char[] { ' ', '\r', '\n', '.', '!', ',', '?'};
 
-            // TODO Count the number of words in the text
+            numberOfWords = text.Split(delimiters, StringSplitOptions.RemoveEmptyEntries).Length;
 
-            // Please dont change the code below (automatic unit tests)
             return numberOfWords;
         }
     }
