@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
 using System.Text;
 
 namespace NumberManipulator
@@ -9,7 +11,16 @@ namespace NumberManipulator
         public static int Reverse(int value)
         {
             // TODO - Reverse the digits back to front
-            return -1;
+
+            
+            int result = 0;
+            while (value > 0)
+            {
+                result = result * 10 + value % 10;
+                value /= 10;
+            }
+            return result;
+  
         }
 
         public static int Complement(int value)
