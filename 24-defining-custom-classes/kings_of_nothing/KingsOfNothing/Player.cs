@@ -8,26 +8,54 @@ namespace KingsOfNothing
     {
         public void Move(int deltaX, int deltaY)
         {
-            // TODO - Change the player location with the delta-values
+            this.locationX += deltaX;
+            this.locationY +=  deltaY;
         }
 
         public void Damage(int damage)
         {
-            // TODO - Lower the players health with the amount of 'damage'.
-            // Make sure not to go lower than '0'
+            if((this.health - damage) <= 0)
+            {
+                this.health = 0;
+            }
+            else
+            {
+                this.health -= damage;
+            }
         }
 
         public bool IsAlive()
         {
-            // TODO - Return true of the player is still alive
-
-            return false;
+            bool isAlive = false;
+            if (this.health > 0)
+            {
+                isAlive = true;
+            }
+            else if(this.health <= 0)
+            {
+                isAlive = false;
+            }
+            return isAlive;
         }
 
         public void Heal(int amount)
         {
-            // TODO - Heal the player by amount. Do not go above 100.
-            // Also a player can only be healed if its alive
+            if(IsAlive() == true)
+            {
+                if ((this.health + amount) >= 100)
+                {
+                    this.health = 100;
+                }
+                else
+                {
+                    this.health += amount;
+                }
+            }
+            else
+            {
+                this.health = 0;
+            }
+            
         }
 
         // Getters / Setters
