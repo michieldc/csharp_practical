@@ -8,18 +8,19 @@ namespace ThePaintFactory
     {
         public void AddSquare(double side)
         {
-            // TODO - Add square surface area to totalArea
+            this.totalArea += (side * side);
         }
 
         public void AddRectangle(double width, double height)
         {
-            // TODO - Add rectangular surface area to totalArea
+            this.totalArea += (width * height);
         }
 
         public double LitersOfPaint(int coats)
         {
-            // TODO - Calculate how much paint is required to paint the totalArea surface.
-            return -1;
+            double litersOfPaint = ((this.totalArea / 12) * coats); //Calculating how many liters of paint are required for the area
+            litersOfPaint += (litersOfPaint / 100) * 5; // Adding the 5% extra calulation to the variable
+            return Math.Ceiling(litersOfPaint); //returning the variable
         }
 
         // Attribute for total area to paint
