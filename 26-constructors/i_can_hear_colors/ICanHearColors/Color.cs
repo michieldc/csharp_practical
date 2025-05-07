@@ -6,12 +6,13 @@ namespace ICanHearColors
 {
     public class Color
     {
-        public int GetRed()
+        public Color()
         {
-            return red;
+            this.red = 0;
+            this.green = 0;
+            this.blue = 0;
         }
-
-        public void SetRed(int red)
+        public  Color(int red, int green, int blue)
         {
             if (red < 0)
             {
@@ -23,15 +24,7 @@ namespace ICanHearColors
             }
 
             this.red = red;
-        }
 
-        public int GetBlue()
-        {
-            return blue;
-        }
-
-        public void SetBlue(int blue)
-        {
             if (blue < 0)
             {
                 blue = 0;
@@ -42,15 +35,7 @@ namespace ICanHearColors
             }
 
             this.blue = blue;
-        }
 
-        public int GetGreen()
-        {
-            return green;
-        }
-
-        public void SetGreen(int green)
-        {
             if (green < 0)
             {
                 green = 0;
@@ -61,11 +46,80 @@ namespace ICanHearColors
             }
 
             this.green = green;
+
+        }
+
+        public int Red { 
+            get
+            {
+                return this.red;
+            }
+            set
+            {
+                if (value < 0)
+                {
+                    this.red = 0;
+                }
+                else if (value > 255)
+                {
+                    this.red = 255;
+                }
+                else
+                {
+                    this.red = value;
+                }
+            }
+         }
+
+        public int Green { 
+            get
+            {
+                return this.green;
+            }
+            set
+            {
+                if (value < 0)
+                {
+                    this.green = 0;
+                }
+                else if (value > 255)
+                {
+                    this.green = 255;
+                }
+                else
+                {
+                    this.green = value;
+                }
+
+            }
+        }
+
+        public int Blue { 
+            get 
+            { 
+                return this.blue;
+            } 
+            set 
+            {
+                if (value < 0)
+                {
+                    this.blue = 0;
+                }
+                else if (value > 255)
+                {
+                    this.blue = 255;
+                }
+                else
+                {
+                    this.blue = value;
+                }
+
+            } 
         }
 
         public override string ToString()
         {
-            return $"Red: {GetRed()} | Green: {GetGreen()} | Blue: {GetBlue()}";
+            return $"Red: {this.red} | Green: {this.green} | Blue: {this.blue}";
         }
 
         private int red = 0;

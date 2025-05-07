@@ -14,13 +14,16 @@ namespace ICanHearColors
 
             Console.WriteLine("To change the color components we need to call the setters.");
 
-            myFavoriteColor.SetGreen(85);
+            myFavoriteColor.Green = 85;
             Console.WriteLine("For example a nice green: " + myFavoriteColor);
 
-            myFavoriteColor.SetRed(128);
-            myFavoriteColor.SetGreen(0);
-            myFavoriteColor.SetBlue(128);
+            myFavoriteColor.Red = 128;
+            myFavoriteColor.Green = 0;
+            myFavoriteColor.Blue = 128;
             Console.WriteLine("Or a very cute pink color " + myFavoriteColor);
+
+            Color newColor = new Color(23, 5, 34);
+            Console.WriteLine(newColor.ToString() + "\n");
         }
     }
 }
